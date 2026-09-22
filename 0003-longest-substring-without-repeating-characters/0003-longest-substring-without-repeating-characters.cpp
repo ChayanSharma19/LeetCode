@@ -13,7 +13,7 @@ public:
 
             int k = high -low+1;
 
-            if(k>mpp.size()){
+            while(k>mpp.size()){
                 mpp[s[low]]--;
                 if(mpp[s[low]]==0) mpp.erase(s[low]);
                 low++;
@@ -25,4 +25,4 @@ public:
         return max_len;
     }
 };
-auto init = atexit([]() { ofstream("display_runtime.txt") << "0"; });
+// auto init = atexit([]() { ofstream("display_runtime.txt") << "0"; });
