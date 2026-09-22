@@ -18,9 +18,9 @@ public:
                 low++;
             }
         }
-        else {
-            max_fruits = max(max_fruits,(high-low+1));
-        }
+        
+        max_fruits = max(max_fruits,(high-low+1));
+        
         high++;
      } 
      return max_fruits;  
